@@ -3,7 +3,7 @@
 
 ## Paper
 
-*Our paper is coming soon：*
+*Our paper is coming soon：A Survey of LLM Agent Harnesses: A Normative Perspective through the Human-Machine Task Contract*
 
 ## Scope
 
