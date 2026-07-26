@@ -276,6 +276,7 @@ Benchmarks and environments where harness design is empirically visible: statefu
 - [AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents](https://arxiv.org/abs/2405.14573) (2024; arXiv preprint)
 - [AssistantBench: Can Web Agents Solve Realistic and Time-Consuming Tasks?](https://arxiv.org/abs/2407.15711) (2024; arXiv preprint) [Code](https://github.com/oriyor/assistantbench)
 - [BrowserGym Ecosystem for Web Agent Research](https://arxiv.org/abs/2412.05467) (2024; arXiv preprint) [Code](https://github.com/servicenow/browsergym)
+- [ClawBench: Can AI Agents Complete Everyday Online Tasks?](https://arxiv.org/abs/2604.08523) (2026; arXiv preprint) [Code](https://github.com/TIGER-AI-Lab/ClawBench) [Project](https://claw-bench.com/)
 - [SWE-bench](https://arxiv.org/abs/2310.06770) (2024; ICLR 2024) [Code](https://github.com/swe-bench/SWE-bench) [Project](https://www.swebench.com/)
 - [VisualWebArena](https://aclanthology.org/2024.acl-long.50/) (2024; ACL 2024) [Code](https://github.com/web-arena-x/visualwebarena) [Project](https://jykoh.com/vwa)
 - [WebLINX: Real-World Website Navigation with Multi-Turn Dialogue](https://arxiv.org/abs/2402.05930) (2024; arXiv preprint) [Project](https://mcgill-nlp.github.io/weblinx)
@@ -330,6 +331,7 @@ Benchmarks are grouped by the harness component they make visible. The goal is n
 
 | Benchmark / Environment | Harness Signal | Link |
 |---|---|---|
+| ClawBench | Isolated model–harness runs on live websites with synchronized action, request, screenshot, video, and agent-message evidence | [Link](https://arxiv.org/abs/2604.08523) |
 | WebArena | Browser action space, website state, and realistic web task execution | [Link](https://arxiv.org/abs/2307.13854) |
 | VisualWebArena | Multimodal browser state and visual grounding for web actions | [Link](https://aclanthology.org/2024.acl-long.50/) |
 | WorkArena | Enterprise web workflows and realistic knowledge-work tasks | [Link](https://proceedings.mlr.press/v235/drouin24a.html) |
