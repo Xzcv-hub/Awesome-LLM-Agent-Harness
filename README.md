@@ -7,9 +7,25 @@
 
 ## Scope
 
+
 This repository collects papers, systems, benchmarks, and related resources on the **LLM agent harness**: the external executable layer that turns a language model into an agent by organizing control flow, tools, memory, state, validation, repair, safety, and human oversight.
 
-The list is organized through the **Human-Machine Task Contract**: how responsibility is assigned among the human, the LLM, the tool/environment, and the harness itself. We include work where the external system around the model materially changes agent behavior; we avoid generic agent demos, prompt-only methods, and broad product lists without reusable harness mechanisms.
+We focus in particular on harness mechanisms that enable:
+
+- **Human-Machine Interaction**
+- **Self-Evolving Agents**
+- **Long-Horizon Agentic Behavior**
+
+The list is organized through the **Human-Machine Task Contract**: how responsibility, control, feedback, and adaptation are distributed among the **human**, the **LLM**, the **tool/environment**, and the **harness itself**.
+
+We include work where the external system around the model materially changes agent behavior, especially through:
+
+- **Interactive Human Feedback**
+- **Long-Term Memory and State**
+- **Self-Reflection and Self-Improvement**
+- **Adaptive Tool Use**
+- **Validation and Repair**
+- **Long-Horizon Planning and Execution**
 
 ---
 
