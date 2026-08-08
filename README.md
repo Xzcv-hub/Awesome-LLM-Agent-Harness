@@ -16,9 +16,7 @@ We focus in particular on harness mechanisms that enable:
 - **Self-Evolving Agents**
 - **Long-Horizon Agentic Behavior**
 
-The list is organized through the **Human-Machine Task Contract**: how responsibility, control, feedback, and adaptation are distributed among the **human**, the **LLM**, the **tool/environment**, and the **harness itself**.
-
-We include work where the external system around the model materially changes agent behavior, especially through:
+The list is organized through the **Human-Machine Task Contract**: how responsibility, control, feedback, and adaptation are distributed among the **human**, the **LLM**, the **tool/environment**, and the **harness itself**. We include work where the external system around the model materially changes agent behavior, especially through:
 
 - **Interactive Human Feedback**
 - **Long-Term Memory and State**
