@@ -8,9 +8,7 @@
 ## Scope
 
 
-This repository collects papers, systems, benchmarks, and related resources on the **LLM agent harness**: the external executable layer that turns a language model into an agent by organizing control flow, tools, memory, state, validation, repair, safety, and human oversight.
-
-We focus in particular on harness mechanisms that enable:
+This repository collects papers, systems, benchmarks, and related resources on the **LLM agent harness**: the external executable layer that turns a language model into an agent by organizing control flow, tools, memory, state, validation, repair, safety, and human oversight. We focus in particular on harness mechanisms that enable:
 
 - **Human-Machine Interaction**
 - **Self-Evolving Agents**
