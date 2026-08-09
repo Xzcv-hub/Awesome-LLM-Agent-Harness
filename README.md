@@ -3,7 +3,7 @@
 
 ## Paper
 
-*Our paper is coming soon：**LLM Agent Harnesses: A Survey of Human-Machine Interaction, Self-Evolution, and Long-Horizon Execution***
+*Our paper is coming soon：**LLM Agent Harnesses: A Survey of Human-Computer Interaction, Self-Evolution, and Long-Horizon Execution***
 
 ## Scope
 
