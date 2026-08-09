@@ -10,7 +10,7 @@
 
 This repository collects papers, systems, benchmarks, and related resources on the **LLM agent harness**: the external executable layer that turns a language model into an agent by organizing control flow, tools, memory, state, validation, repair, safety, and human oversight. We focus in particular on three hot topics🔥in **frontier research and future directions in LLM agent harness design**:
 
-- 🔥 **Human-Machine Interaction**
+- 🔥 **Human-Computer Interaction**
 - 🔥 **Self-Evolving Agents**
 - 🔥 **Long-Horizon Agentic Behavior**
 
