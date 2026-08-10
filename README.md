@@ -3,16 +3,16 @@
 
 ## Paper
 
-*Survey in preparation:* **LLM Agent Harnesses: A Survey of Human-Computer Interaction, Self-Evolution, and Long-Horizon Execution**
+*Our paper is coming soon：**LLM Agent Harnesses: A Survey of Human-Computer Interaction, Self-Evolution, and Long-Horizon Execution***
 
 ## Scope
 
 
-This repository collects papers, systems, benchmarks, and related resources on the **LLM agent harness**: the external executable layer that turns a language model into an agent by organizing control flow, tools, memory, state, validation, repair, safety, and human oversight. We focus on three research axes in **LLM agent harness design**:
+This repository collects papers, systems, benchmarks, and related resources on the **LLM agent harness**: the external executable layer that turns a language model into an agent by organizing control flow, tools, memory, state, validation, repair, safety, and human oversight. We focus in particular on three hot topics🔥in **frontier research and future directions in LLM agent harness design**:
 
-- **Human-Computer Interaction**
-- **Self-Evolving Agents**
-- **Long-Horizon Agentic Behavior**
+- 🔥 **Human-Computer Interaction**
+- 🔥 **Self-Evolving Agents**
+- 🔥 **Long-Horizon Agentic Behavior**
 
 The list is organized through the **Human-Machine Task Contract**: how responsibility, control, feedback, and adaptation are distributed among the **human**, the **LLM**, the **tool/environment**, and the **harness itself**. We include work where the external system around the model materially changes agent behavior, especially through:
 
