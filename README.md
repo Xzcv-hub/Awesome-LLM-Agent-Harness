@@ -3,16 +3,16 @@
 
 ## Paper
 
-*Our paper is coming soon：**LLM Agent Harnesses: A Survey of Human-Computer Interaction, Self-Evolution, and Long-Horizon Execution***
+*Survey in preparation:* **LLM Agent Harnesses: A Survey of Human-Computer Interaction, Self-Evolution, and Long-Horizon Execution**
 
 ## Scope
 
 
-This repository collects papers, systems, benchmarks, and related resources on the **LLM agent harness**: the external executable layer that turns a language model into an agent by organizing control flow, tools, memory, state, validation, repair, safety, and human oversight. We focus in particular on three hot topics🔥in **frontier research and future directions in LLM agent harness design**:
+This repository collects papers, systems, benchmarks, and related resources on the **LLM agent harness**: the external executable layer that turns a language model into an agent by organizing control flow, tools, memory, state, validation, repair, safety, and human oversight. We focus on three research axes in **LLM agent harness design**:
 
-- 🔥 **Human-Computer Interaction**
-- 🔥 **Self-Evolving Agents**
-- 🔥 **Long-Horizon Agentic Behavior**
+- **Human-Computer Interaction**
+- **Self-Evolving Agents**
+- **Long-Horizon Agentic Behavior**
 
 The list is organized through the **Human-Machine Task Contract**: how responsibility, control, feedback, and adaptation are distributed among the **human**, the **LLM**, the **tool/environment**, and the **harness itself**. We include work where the external system around the model materially changes agent behavior, especially through:
 
@@ -47,7 +47,10 @@ LLM Agent Harness
 ├── 8. Human-in-the-Loop, Oversight, and Contract Governance
 ├── 9. Policy, Safety, and Constraint Enforcement
 ├── 10. Benchmarks and Evaluation Environments
-└── 11. Domain-Specific Harnesses
+├── 11. Domain-Specific Harnesses
+└── 12. Harness Optimization and Self-Evolution
+    ├── Trajectory data, process supervision, and credit assignment
+    └── Adaptive harnesses, online learning, and self-evolution
 ```
 
 ---
@@ -55,10 +58,10 @@ LLM Agent Harness
 ## Contents
 
 - [Scope](#scope)
-- [Human-Machine Task Contract Taxonomy](#humanmachinetask-contract-taxonomy)
+- [Human-Machine Task Contract Taxonomy](#human-machine-task-contract-taxonomy)
 - [Harness Papers and Systems](#harness-papers-and-systems)
   - [1. Core Surveys and Position Papers](#1-core-surveys-and-position-papers)
-  - [2. Harness Foundations: Reasoning–Acting Loops](#2-harness-foundations-reasoning-acting-loops)
+  - [2. Harness Foundations: Reasoning–Acting Loops](#2-harness-foundations-reasoningacting-loops)
   - [3. Execution and Orchestration Harnesses](#3-execution-and-orchestration-harnesses)
   - [4. Code-as-Harness and Program-Controlled Agents](#4-code-as-harness-and-program-controlled-agents)
   - [5. Tool Interface, Action Validity, and Sandboxing](#5-tool-interface-action-validity-and-sandboxing)
@@ -68,6 +71,8 @@ LLM Agent Harness
   - [9. Policy, Safety, and Constraint Enforcement](#9-policy-safety-and-constraint-enforcement)
   - [10. Benchmarks and Evaluation Environments](#10-benchmarks-and-evaluation-environments)
   - [11. Domain-Specific Harnesses](#11-domain-specific-harnesses)
+  - [12. Harness Optimization and Self-Evolution](#12-harness-optimization-and-self-evolution)
+- [Long-Horizon Agentic Behavior](#long-horizon-agentic-behavior)
 - [Benchmarks](#benchmarks)
 - [Related Repositories](#related-repositories)
 
@@ -86,6 +91,7 @@ Foundational surveys and position papers that define the harness space, its neig
 
 - [Agent Harness for Large Language Model Agents: A Survey](https://www.preprints.org/manuscript/202604.0428) (2026; Preprints.org survey) [Code](https://github.com/Gloriaameng/Awesome-Agent-Harness)
 - [Agent Systems with Harness Engineering](https://openreview.net/pdf/8bb940ad082fed1f1e2c0a132c0c5b4aa4c9d21c.pdf) (2026; OpenReview preprint / survey) [Code](https://github.com/RUCAIBox/awesome-agent-harness)
+- [Towards Long-Horizon Agents: A Survey](https://www.preprints.org/manuscript/202607.1328) (2026; Preprints.org survey) [Code / Reading List](https://github.com/RUC-NLPIR/Awesome-Long-Horizon-Agents) [Project](https://long-horizon-agents.github.io/)
 - [From Static Templates to Dynamic Runtime Graphs: A Survey of Workflow Optimization for LLM Agents](https://arxiv.org/abs/2603.22386) (2026; arXiv preprint)
 - [Tool Learning with Large Language Models: A Survey](https://arxiv.org/abs/2405.17935) (2024; arXiv preprint)
 - [Understanding the planning of LLM agents: A survey](https://arxiv.org/abs/2402.02716) (2024; arXiv preprint)
@@ -328,6 +334,90 @@ Domain examples where task constraints force concrete harness design choices, su
 
 ---
 
+### 12. Harness Optimization and Self-Evolution
+
+Methods that change the agent's execution contract through trajectory data, process supervision, policy optimization, adaptive context control, or online experience. We include training and evolution work when it changes how the harness selects, validates, credits, repairs, or adapts actions; generic base-model pretraining is out of scope.
+
+<details>
+<summary><b>Harness Optimization and Self-Evolution</b></summary>
+
+- [Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning](https://arxiv.org/abs/2503.09516) (2025; arXiv preprint) [Code](https://github.com/PeterGriffinJin/Search-R1)
+- [R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.05592) (2025; arXiv preprint)
+- [ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.19470) (2025; NeurIPS 2025)
+- [Beyond Ten Turns: Unlocking Long-Horizon Agentic Search with Large-Scale Asynchronous RL](https://arxiv.org/abs/2508.07976) (2025; arXiv preprint) [Code](https://github.com/inclusionAI/ASearcher)
+- [Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window](https://arxiv.org/abs/2510.08276) (2025; arXiv preprint)
+- [Verified Critical Step Optimization for LLM Agents](https://arxiv.org/abs/2602.03412) (2026; arXiv preprint)
+- [Hindsight Credit Assignment for Long-Horizon LLM Agents](https://arxiv.org/abs/2603.08754) (2026; arXiv preprint)
+- [Beyond Trajectory Rewards: Step-level Credit Assignment for Agentic Search via Graph Modeling](https://arxiv.org/abs/2605.29697) (2026; arXiv preprint)
+- [ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment](https://arxiv.org/abs/2608.05102) (2026; arXiv preprint)
+
+</details>
+
+---
+
+## Long-Horizon Agentic Behavior
+
+Long-horizon behavior is a cross-cutting property of the model-harness-environment system, not a separate tool or application domain. This index keeps the existing primary-role organization while grouping work by the failure boundary introduced by extended execution. Include a paper here when the horizon creates a distinct systems problem such as delayed consequences, state discontinuity, context growth, irreversible errors, recovery, or horizon-aware evaluation.
+
+### Horizon Levels
+
+The same contract can be stressed at three nested levels:
+
+- **H1 - Intra-context execution:** many dependent actions must remain coherent within one working context, with planning, verification, and recovery before the trajectory derails.
+- **H2 - Cross-context execution:** the task outgrows one context window or session, requiring external state, checkpoints, handoff, and reliable resume behavior.
+- **H3 - Cross-task evolution:** goals and environments shift across tasks, requiring reusable skills, experience accumulation, and harness or policy adaptation.
+
+### Contract Stress Map
+
+The long-horizon lens becomes specific to this repository when each level is tied to a contract boundary rather than only to elapsed time or turn count.
+
+| Horizon level | Dominant failure | Contract question | Primary harness roles |
+|---|---|---|---|
+| H1 | Local drift, premature commitment, and delayed error discovery | Who can validate or veto the next action? | Planning, tools, verification, repair |
+| H2 | Lost state, stale context, inconsistent handoff, and unsafe resume | Who owns durable state and which facts are trusted? | Memory, context management, orchestration, audit |
+| H3 | Goal shift, skill interference, policy drift, and unbounded self-modification | Who authorizes adaptation and remains accountable for outcomes? | Human oversight, policy, self-evolution, evaluation |
+
+### Long-Horizon Mechanisms and Representative Work
+
+This is a cross-cutting index rather than a second primary archive. Papers should have one canonical record under their main harness role and may be linked here through these dimensions.
+
+<details>
+<summary><b>Planning, State, Credit, Recovery, and Evaluation</b></summary>
+
+**Planning and task decomposition**
+
+- [Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks](https://arxiv.org/abs/2503.09572) (2025; arXiv preprint) separates high-level planning from environment-specific execution and trains the planner with synthetic trajectory annotations.
+- [Why Reasoning Fails to Plan: A Planning-Centric Analysis of Long-Horizon Decision Making in LLM Agents](https://arxiv.org/abs/2601.22311) (2026; arXiv preprint) studies myopic step-wise policies and future-aware lookahead.
+
+**Context and state continuity**
+
+- [LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents](https://arxiv.org/abs/2605.05191) (2026; arXiv preprint) introduces skip, compress, rollback, snippet, and delete operations for adaptive trajectory context.
+- [Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window](https://arxiv.org/abs/2510.08276) (2025; arXiv preprint) addresses context growth and turn limits during deep-search training.
+- [Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](https://arxiv.org/abs/2606.06448) (2026; arXiv preprint) characterizes memory construction, retrieval, and generation costs across stateful workloads.
+
+**Training and trajectory credit assignment**
+
+- [Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning](https://arxiv.org/abs/2503.09516) (2025; arXiv preprint) trains multi-turn search interaction with outcome-based RL.
+- [R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.05592) (2025; arXiv preprint) uses a two-stage outcome-based RL approach for autonomous search invocation.
+- [ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.19470) (2025; NeurIPS 2025) treats search operations as part of the reasoning chain and reports reflection and self-correction during RL.
+- [Beyond Ten Turns: Unlocking Long-Horizon Agentic Search with Large-Scale Asynchronous RL](https://arxiv.org/abs/2508.07976) (2025; arXiv preprint) studies asynchronous training that supports trajectories beyond 100 tool calls.
+- [Hindsight Credit Assignment for Long-Horizon LLM Agents](https://arxiv.org/abs/2603.08754) (2026; arXiv preprint) converts sparse outcomes into hindsight-refined step-level value signals.
+- [ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment](https://arxiv.org/abs/2608.05102) (2026; arXiv preprint) recovers answer-linked clues and uses them to score useful, redundant, and erroneous search steps.
+
+**Verified execution and recovery**
+
+- [LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks](https://arxiv.org/abs/2608.01964) (2026; arXiv preprint) externalizes task state and uses a Manage-Execute-Audit loop with independently verified environment facts.
+- [MAGE: Safeguarding LLM Agents against Long-Horizon Threats via Shadow Memory](https://arxiv.org/abs/2605.03228) (2026; arXiv preprint) carries safety-critical state across a trajectory through a dedicated guard memory.
+
+**Horizon-aware evaluation and failure analysis**
+
+- [LoHoSearch: Benchmarking Long-Horizon Search Agents Beyond the Human Difficulty Ceiling](https://arxiv.org/abs/2606.12837) (2026; arXiv preprint) constructs structurally difficult multi-hop search questions and evaluates context-management gains.
+- [Diagnosing Search Behavior and Failure Modes in Long-Horizon Search Agents](https://arxiv.org/abs/2608.01913) (2026; arXiv preprint) separates retrieval gaps from utilization gaps using trajectory-level evidence judgments.
+
+</details>
+
+---
+
 ## Benchmarks
 
 Benchmarks are grouped by the harness component they make visible. The goal is not to list every agent benchmark, but to highlight environments where the execution stack, tool interface, state tracking, policy layer, or repair loop materially affects results.
@@ -377,6 +467,16 @@ Benchmarks are grouped by the harness component they make visible. The goal is n
 | ToolHop | Multi-hop tool-use dependency chains | [Link](https://arxiv.org/abs/2501.02506) |
 | Berkeley Function Calling Leaderboard | Function-call formatting, tool selection, and action-validity benchmarking | [Link](https://gorilla.cs.berkeley.edu/leaderboard.html) |
 
+### Long-Horizon Search and Deep-Research Agents
+
+| Benchmark / Environment | Harness Signal | Link |
+|---|---|---|
+| BrowseComp | Multi-hop web research with evidence gathering and answer synthesis | [Link](https://arxiv.org/abs/2504.12516) |
+| BrowseComp-ZH | Chinese long-horizon browsing and evidence integration | [Link](https://arxiv.org/abs/2504.19314) |
+| DeepSearchQA | Comprehensiveness and evidence coverage for deep-research agents | [Link](https://arxiv.org/abs/2601.20975) |
+| xBench | Profession-aligned real-world productivity tasks and agent trajectory quality | [Link](https://arxiv.org/abs/2506.13651) |
+| LoHoSearch | Structurally difficult search spaces and context-management stress testing | [Link](https://arxiv.org/abs/2606.12837) |
+
 ### Safety and Security
 
 | Benchmark / Environment | Harness Signal | Link |
@@ -406,6 +506,7 @@ Benchmarks are grouped by the harness component they make visible. The goal is n
 | Resource | Owner / Organization | Scope | Description |
 |---|---|---|---|
 | [Awesome-Agent-Harness](https://github.com/Gloriaameng/Awesome-Agent-Harness) | Gloriaameng | Harness survey and resource list | A direct neighboring resource that explicitly uses the agent-harness framing and collects harness papers and systems. This repository is the closest comparator; our list should remain distinct by indexing each work through responsibility allocation, state ownership, action validity, failure boundaries, repair, and human oversight. |
+| [Awesome-Long-Horizon-Agents](https://github.com/RUC-NLPIR/Awesome-Long-Horizon-Agents) | RUC-NLPIR | Long-horizon agent survey reading list | A direct adjacent resource organized around long-horizon foundations, harnesses, optimization, applications, and frontier problems. Our repository complements it by treating long horizon as a cross-cutting contract dimension within a broader harness taxonomy. |
 | [Agent Systems with Harness Engineering](https://github.com/RUCAIBox/awesome-agent-harness) | RUCAIBox | Harness engineering survey companion repo | A structured academic roadmap around harness engineering, including design, model adaptation, benchmarks, and future directions. It validates the field-level importance of harnesses; our repository complements it by using the Human-Machine Task Contract as the main organizing lens. |
 | [Awesome-Code-as-Agent-Harness-Papers](https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers) | YennNing | Code-as-harness papers | A focused resource on code as the operational substrate for agent harnesses. It is best treated as the primary related list for the code-as-harness subsection, while this repository covers a broader contract stack including tools, policy, memory, verification, benchmarks, and human oversight. |
 | [awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering) | ai-boost | Practitioner-oriented harness engineering | A fast-moving engineering list covering patterns, tools, memory, MCP, permissions, observability, and orchestration. It is useful for ecosystem awareness; our repository should compete on scholarly curation, verified paper metadata, and contract-oriented taxonomy rather than practitioner breadth alone. |
