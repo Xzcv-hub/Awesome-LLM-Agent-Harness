@@ -72,7 +72,6 @@ LLM Agent Harness
   - [10. Benchmarks and Evaluation Environments](#10-benchmarks-and-evaluation-environments)
   - [11. Domain-Specific Harnesses](#11-domain-specific-harnesses)
   - [12. Harness Optimization and Self-Evolution](#12-harness-optimization-and-self-evolution)
-- [Long-Horizon Agentic Behavior](#long-horizon-agentic-behavior)
 - [Benchmarks](#benchmarks)
 - [Related Repositories](#related-repositories)
 
@@ -122,6 +121,8 @@ Early and foundational mechanisms that externalize reasoning, planning, search, 
 - [SGLang: Efficient Execution of Structured Language Model Programs](https://arxiv.org/abs/2312.07104) (2023; arXiv preprint) [Code](https://github.com/sgl-project/sglang) [Project](https://www.sglang.io)
 - [Tree Search for Language Model Agents](https://arxiv.org/abs/2407.01476) (2024; arXiv preprint) [Project](https://jykoh.com/search-agents)
 - [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651) (2023; arXiv preprint)
+- [Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks](https://arxiv.org/abs/2503.09572) (2025; arXiv preprint)
+- [Why Reasoning Fails to Plan: A Planning-Centric Analysis of Long-Horizon Decision Making in LLM Agents](https://arxiv.org/abs/2601.22311) (2026; arXiv preprint)
 
 </details>
 
@@ -147,6 +148,7 @@ Systems that manage control flow, roles, task routing, execution state, multi-ag
 - [CAMEL: Communicative Agents for Mind Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760) (2023; arXiv preprint) [Code](https://github.com/camel-ai/camel) [Project](https://www.camel-ai.org)
 - [Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://arxiv.org/abs/2303.17580) (2023; arXiv preprint)
 - [TaskMatrix.AI: Completing Tasks by Connecting Foundation Models with Millions of APIs](https://arxiv.org/abs/2303.16434) (2023; arXiv preprint)
+- [LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks](https://arxiv.org/abs/2608.01964) (2026; arXiv preprint)
 
 </details>
 
@@ -210,6 +212,9 @@ Work on persistent state, episodic memory, skill libraries, context selection, a
 - [Voyager](https://arxiv.org/abs/2305.16291) (2023; arXiv preprint) [Code](https://github.com/minedojo/voyager) [Project](https://voyager.minedojo.org/)
 - [MemoryBank: Enhancing Large Language Models with Long-Term Memory](https://arxiv.org/abs/2305.10250) (2023; AAAI / arXiv)
 - [A-Mem: Agentic Memory for LLM Agents](https://arxiv.org/abs/2502.12110) (2025; arXiv preprint)
+- [LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents](https://arxiv.org/abs/2605.05191) (2026; arXiv preprint)
+- [Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window](https://arxiv.org/abs/2510.08276) (2025; arXiv preprint)
+- [Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](https://arxiv.org/abs/2606.06448) (2026; arXiv preprint)
 
 </details>
 
@@ -231,6 +236,7 @@ Methods that inspect traces, validate intermediate steps, diagnose execution fai
 - [From Failed Trajectories to Reliable LLM Agents: Diagnosing and Repairing Harness Flaws](https://arxiv.org/abs/2606.06324) (2026; arXiv preprint)
 - [Self-Harness: Harnesses That Improve Themselves](https://arxiv.org/abs/2606.09498) (2026; arXiv preprint)
 - [Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows](https://arxiv.org/abs/2605.27922) (2026; arXiv preprint)
+- [Diagnosing Search Behavior and Failure Modes in Long-Horizon Search Agents](https://arxiv.org/abs/2608.01913) (2026; arXiv preprint)
 
 </details>
 
@@ -270,6 +276,7 @@ Research on guardrails, prompt-injection defenses, privacy, permissions, policy 
 - [Security Analysis of the Model Context Protocol](https://arxiv.org/abs/2601.17549) (2026; arXiv preprint)
 - [ActPlane: Programmable OS-Level Policy Enforcement for Agent Harnesses](https://arxiv.org/html/2606.25189v1) (2026; arXiv preprint) [Project](https://eunomia.dev/actplane/)
 - [From Assistant to Double Agent: Formalizing and Benchmarking Attacks on OpenClaw for Personalized Local AI Agent](https://arxiv.org/abs/2602.08412) (2026; arXiv preprint) [Code](https://github.com/AstorYH/PASB)
+- [MAGE: Safeguarding LLM Agents against Long-Horizon Threats via Shadow Memory](https://arxiv.org/abs/2605.03228) (2026; arXiv preprint)
 
 </details>
 
@@ -345,74 +352,10 @@ Methods that change the agent's execution contract through trajectory data, proc
 - [R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.05592) (2025; arXiv preprint)
 - [ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.19470) (2025; NeurIPS 2025)
 - [Beyond Ten Turns: Unlocking Long-Horizon Agentic Search with Large-Scale Asynchronous RL](https://arxiv.org/abs/2508.07976) (2025; arXiv preprint) [Code](https://github.com/inclusionAI/ASearcher)
-- [Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window](https://arxiv.org/abs/2510.08276) (2025; arXiv preprint)
 - [Verified Critical Step Optimization for LLM Agents](https://arxiv.org/abs/2602.03412) (2026; arXiv preprint)
 - [Hindsight Credit Assignment for Long-Horizon LLM Agents](https://arxiv.org/abs/2603.08754) (2026; arXiv preprint)
 - [Beyond Trajectory Rewards: Step-level Credit Assignment for Agentic Search via Graph Modeling](https://arxiv.org/abs/2605.29697) (2026; arXiv preprint)
 - [ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment](https://arxiv.org/abs/2608.05102) (2026; arXiv preprint)
-
-</details>
-
----
-
-## Long-Horizon Agentic Behavior
-
-Long-horizon behavior is a cross-cutting property of the model-harness-environment system, not a separate tool or application domain. This index keeps the existing primary-role organization while grouping work by the failure boundary introduced by extended execution. Include a paper here when the horizon creates a distinct systems problem such as delayed consequences, state discontinuity, context growth, irreversible errors, recovery, or horizon-aware evaluation.
-
-### Horizon Levels
-
-The same contract can be stressed at three nested levels:
-
-- **H1 - Intra-context execution:** many dependent actions must remain coherent within one working context, with planning, verification, and recovery before the trajectory derails.
-- **H2 - Cross-context execution:** the task outgrows one context window or session, requiring external state, checkpoints, handoff, and reliable resume behavior.
-- **H3 - Cross-task evolution:** goals and environments shift across tasks, requiring reusable skills, experience accumulation, and harness or policy adaptation.
-
-### Contract Stress Map
-
-The long-horizon lens becomes specific to this repository when each level is tied to a contract boundary rather than only to elapsed time or turn count.
-
-| Horizon level | Dominant failure | Contract question | Primary harness roles |
-|---|---|---|---|
-| H1 | Local drift, premature commitment, and delayed error discovery | Who can validate or veto the next action? | Planning, tools, verification, repair |
-| H2 | Lost state, stale context, inconsistent handoff, and unsafe resume | Who owns durable state and which facts are trusted? | Memory, context management, orchestration, audit |
-| H3 | Goal shift, skill interference, policy drift, and unbounded self-modification | Who authorizes adaptation and remains accountable for outcomes? | Human oversight, policy, self-evolution, evaluation |
-
-### Long-Horizon Mechanisms and Representative Work
-
-This is a cross-cutting index rather than a second primary archive. Papers should have one canonical record under their main harness role and may be linked here through these dimensions.
-
-<details>
-<summary><b>Planning, State, Credit, Recovery, and Evaluation</b></summary>
-
-**Planning and task decomposition**
-
-- [Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks](https://arxiv.org/abs/2503.09572) (2025; arXiv preprint) separates high-level planning from environment-specific execution and trains the planner with synthetic trajectory annotations.
-- [Why Reasoning Fails to Plan: A Planning-Centric Analysis of Long-Horizon Decision Making in LLM Agents](https://arxiv.org/abs/2601.22311) (2026; arXiv preprint) studies myopic step-wise policies and future-aware lookahead.
-
-**Context and state continuity**
-
-- [LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents](https://arxiv.org/abs/2605.05191) (2026; arXiv preprint) introduces skip, compress, rollback, snippet, and delete operations for adaptive trajectory context.
-- [Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window](https://arxiv.org/abs/2510.08276) (2025; arXiv preprint) addresses context growth and turn limits during deep-search training.
-- [Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](https://arxiv.org/abs/2606.06448) (2026; arXiv preprint) characterizes memory construction, retrieval, and generation costs across stateful workloads.
-
-**Training and trajectory credit assignment**
-
-- [Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning](https://arxiv.org/abs/2503.09516) (2025; arXiv preprint) trains multi-turn search interaction with outcome-based RL.
-- [R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.05592) (2025; arXiv preprint) uses a two-stage outcome-based RL approach for autonomous search invocation.
-- [ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning](https://arxiv.org/abs/2503.19470) (2025; NeurIPS 2025) treats search operations as part of the reasoning chain and reports reflection and self-correction during RL.
-- [Beyond Ten Turns: Unlocking Long-Horizon Agentic Search with Large-Scale Asynchronous RL](https://arxiv.org/abs/2508.07976) (2025; arXiv preprint) studies asynchronous training that supports trajectories beyond 100 tool calls.
-- [Hindsight Credit Assignment for Long-Horizon LLM Agents](https://arxiv.org/abs/2603.08754) (2026; arXiv preprint) converts sparse outcomes into hindsight-refined step-level value signals.
-- [ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment](https://arxiv.org/abs/2608.05102) (2026; arXiv preprint) recovers answer-linked clues and uses them to score useful, redundant, and erroneous search steps.
-
-**Verified execution and recovery**
-
-- [LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks](https://arxiv.org/abs/2608.01964) (2026; arXiv preprint) externalizes task state and uses a Manage-Execute-Audit loop with independently verified environment facts.
-- [MAGE: Safeguarding LLM Agents against Long-Horizon Threats via Shadow Memory](https://arxiv.org/abs/2605.03228) (2026; arXiv preprint) carries safety-critical state across a trajectory through a dedicated guard memory.
-
-**Horizon-aware evaluation and failure analysis**
-
-- [LoHoSearch: Benchmarking Long-Horizon Search Agents Beyond the Human Difficulty Ceiling](https://arxiv.org/abs/2606.12837) (2026; arXiv preprint) constructs structurally difficult multi-hop search questions and evaluates context-management gains.
-- [Diagnosing Search Behavior and Failure Modes in Long-Horizon Search Agents](https://arxiv.org/abs/2608.01913) (2026; arXiv preprint) separates retrieval gaps from utilization gaps using trajectory-level evidence judgments.
 
 </details>
 
