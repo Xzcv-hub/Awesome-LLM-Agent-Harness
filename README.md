@@ -470,3 +470,7 @@ Benchmarks are grouped by the harness component they make visible. The goal is n
 | [LangChain: The Anatomy of an Agent Harness](https://www.langchain.com/blog/the-anatomy-of-an-agent-harness) | LangChain | Agent-harness definition and practitioner framing | A clear practitioner explanation of model, framework, runtime, and harness boundaries. It is useful for sharpening terminology, but the repository taxonomy should remain literature-driven and contract-oriented rather than vendor-framework-centered. |
 
 ---
+
+## 🙌 Contributing
+
+This repository was mainly created by Zihua Meng (Upenn) and Jiashen Liu (University of Warwick), under the guidance of Shao-Jun Xia. Main contributors include Di Wang (Foxconn), Yizhuo He (Google), Yuner Zhang, Yifan Jiang, Xiaoyang Chen.
