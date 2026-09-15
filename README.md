@@ -466,4 +466,4 @@ Benchmarks are grouped by the harness component they make visible. The goal is n
 
 ## 🙌 Contributing
 
-This repository was mainly created by Zihua Meng (Upenn) and Jiashen Liu (University of Warwick), under the guidance of Shao-Jun Xia. Main contributors include Di Wang (Foxconn), Yizhuo He (Google), Zihao Wang (Meta), Yuner Zhang, Yifan Jiang, Xiaoyang Chen.
+This repository was mainly created by Zihua Meng (Upenn), under the guidance of Shao-Jun Xia. Main contributors include Di Wang (Foxconn), Yizhuo He (Google), Zihao Wang (Meta), Yuner Zhang, Yifan Jiang, Xiaoyang Chen.
