@@ -187,6 +187,8 @@ Additional compositional and learnable harness work:
 - [Beyond Trajectory Rewards: Step-level Credit Assignment for Agentic Search via Graph Modeling](https://arxiv.org/abs/2605.29697) (2026; arXiv preprint)
 - [ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment](https://arxiv.org/abs/2608.05102) (2026; arXiv preprint)
 
+- [Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report](https://arxiv.org/abs/2608.15763) (2026; arXiv technical report) — Harness-state augmentation for training agents to use changing Skills, tool schemas, prompts, and Hooks.
+
 </details>
 
 ### 2.5 Self-Evolution Evaluation
