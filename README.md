@@ -236,6 +236,7 @@ This axis studies how a harness keeps an extended execution coherent: preserving
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) (2023; arXiv preprint / OpenReview) [Code](https://github.com/microsoft/autogen) [Project](https://microsoft.github.io/autogen/stable//index.html)
 - [TaskWeaver: A Code-First Agent Framework](https://arxiv.org/abs/2311.17541) (2023; arXiv preprint) [Code](https://github.com/microsoft/TaskWeaver) [Project](https://microsoft.github.io/TaskWeaver/)
 - [LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) (2024; Official docs / OSS runtime) [Code](https://github.com/langchain-ai/langgraph) [Project](https://www.langchain.com/langgraph)
+- [Reef](https://reefinfra.ai/docs/) (2026; Official docs / OSS runtime) [Code](https://github.com/Human-Agent-Society/reef) `Memory` `Verification` `Evaluation`
 - [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) (2024; arXiv preprint) [Code](https://github.com/OpenHands/openhands) [Project](https://docs.openhands.dev/overview/introduction)
 - [LLM-as-Code: Agentic Programming for Agent Harness](https://arxiv.org/html/2606.15874v1) (2026; KDD 2026 AgenticSE workshop per paper page)
 - [Natural-Language Agent Harnesses](https://arxiv.org/abs/2603.25723) (2026; arXiv preprint) [Code](https://github.com/curated-skills/natural-language-agent-harnesses)
