@@ -466,6 +466,6 @@ Benchmarks are grouped by the harness component they make visible. The goal is n
 
 ## 🙌 Contributing
 
-This repository was mainly created by Zihua Meng (Upenn), under the guidance of Shao-Jun Xia (Duke, Academic Leader). Our team primarily consists of members from universities in the US and the UK, as well as engineers and researchers from industry. Main contributors include Di Wang (Foxconn), Jiahan Li (NYU), Zijia Wang (Oxford), Huixin Zhang (TAMU), Haoyu Wang (AItonomy Foundation), Zihao Wang (UCLA, Meta), Zitong Li (USC, TikTok), Zijing Liu (NEU, Meta), Yifan Zhang (Google), Yifan Qiao (NEU, Amazon), Yizhuo He (Google), Yuner Zhang (CMU), Yifan Jiang (USC), Xiaoyang Chen (UNC).
+This repository was mainly created by Zihua Meng (Upenn), under the guidance of Shao-Jun Xia (Duke, Academic Leader). Our team primarily consists of members from universities in the US and the UK, as well as engineers and researchers from industry. Main contributors include Di Wang (Foxconn), Zijia Wang (Oxford), Jiahan Li (NYU), Huixin Zhang (TAMU), Haoyu Wang (AItonomy Foundation), Zihao Wang (UCLA, Meta), Zitong Li (USC, TikTok), Zijing Liu (NEU, Meta), Yifan Zhang (Google), Yifan Qiao (NEU, Amazon), Yizhuo He (Google), Yuner Zhang (CMU), Yifan Jiang (USC), Xiaoyang Chen (UNC).
 
 We are particularly grateful to our collaborators in industry for their generous support and open-mindedness. Industry Leader: Dr. Di Wang (Researcher from Foxconn).
